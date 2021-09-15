@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "mega-store",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Strapi Mega Store Application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -12,6 +12,8 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
+    "pg": "^8.7.1",
+    "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.0",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
@@ -23,7 +25,8 @@
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
     "strapi-provider-email-sendgrid": "^3.6.8",
-    "strapi-utils": "3.6.8"
+    "strapi-utils": "3.6.8",
+    "stripe": "^8.174.0"
   },
   "author": {
     "name": "A Strapi developer"
