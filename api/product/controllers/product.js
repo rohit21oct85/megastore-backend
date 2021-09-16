@@ -5,6 +5,16 @@ module.exports = {
             let user_id =  ctx.params.user_id
             return strapi.query('product').find({users_permissions_user: user_id});
       },
+      
+      async getProductById(ctx){
+            let {user_id, product_id} =  ctx.params
+            return strapi.query('product').findOne({users_permissions_user: user_id, id: product_id});
+      },
+      async getProductBySlug(ctx){
+            let {product_slug} =  ctx.params
+            return strapi.query('product').findOne({slug: product_slug});
+      },
+
       async update(ctx){
             try {
                   let {id} =  ctx.params

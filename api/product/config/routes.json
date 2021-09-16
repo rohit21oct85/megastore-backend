@@ -18,6 +18,22 @@
     },
     {
       "method": "GET",
+      "path": "/get-product-by-id/:user_id?/:product_id?",
+      "handler": "product.getProductById",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/get-product-by-slug/:product_slug?",
+      "handler": "product.getProductBySlug",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/products/count",
       "handler": "product.count",
       "config": {

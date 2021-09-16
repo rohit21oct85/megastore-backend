@@ -34,17 +34,11 @@
     "product_unit": {
       "type": "string"
     },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "order_qty": {
+      "type": "decimal"
+    },
+    "product_image": {
+      "type": "string"
     }
   }
 }
