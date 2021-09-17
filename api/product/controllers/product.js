@@ -24,6 +24,5 @@ module.exports = {
             } catch (error) {
                  return ctx.error; 
             }
-            
       }
 };
